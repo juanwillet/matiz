@@ -1,591 +1,668 @@
 header {
-    position: sticky;
-    top: 0;
-    z-index: 2;
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
+
 .collapse {
-    justify-content: flex-end;
+  justify-content: flex-end;
 }
+
 .navbar-brand img {
-    width: 60px;
+  width: 60px;
 }
+
 .nav-link {
-    font-family: "Rubik", sans-serif;
-    color: black;
-    font-variant-caps: all-small-caps;
-    font-weight: 500;
+  font-family: "Rubik", sans-serif;
+  color: black;
+  font-variant-caps: all-small-caps;
+  font-weight: 500;
 }
+
 .dropdown-item {
-    font-family: "Rubik", sans-serif;
-    color: black;
-    font-variant-caps: all-small-caps;
-    font-weight: 500;
+  font-family: "Rubik", sans-serif;
+  color: black;
+  font-variant-caps: all-small-caps;
+  font-weight: 500;
 }
+
 .fa-brands {
-    color: black;
+  color: black;
 }
+
 .banner a img {
-    width: 100%;
-    object-fit: cover;
-    border: solid black 1px;
-    border-radius: 3px;
+  width: 100%;
+  object-fit: cover;
+  border: solid black 1px;
+  border-radius: 3px;
 }
+
 .banner {
-    padding: 20px;
+  padding: 20px;
 }
+
 h2 {
-    text-align: center;
-    font-family: "Rubik", sans-serif;
-        color: black;
-        font-variant-caps: all-small-caps;
-        font-weight: 500;
-        list-style: none;
-        padding: 15px;
-        background-color: white;
-    margin: 20px;
-    border: solid black 1px
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+  color: black;
+  font-variant-caps: all-small-caps;
+  font-weight: 500;
+  list-style: none;
+  padding: 15px;
+  background-color: white;
+  margin: 20px;
+  border: solid black 1px;
 }
+
 h3 {
-    text-align: center;
-    font-family: "Rubik", sans-serif;
-        color: black;
-        font-variant-caps: all-small-caps;
-        font-weight: 500;
-        list-style: none;
-        padding: 15px;
-        background-color: white;
-    margin: 20px;
-    border: solid black 1px
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+  color: black;
+  font-variant-caps: all-small-caps;
+  font-weight: 500;
+  list-style: none;
+  padding: 15px;
+  background-color: white;
+  margin: 20px;
+  border: solid black 1px;
 }
+
 #shop {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax (1000px, 1fr));
-    background-color: #f5f5f5;
-    padding: 10px;
-    margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax 1000px, 1fr);
+  background-color: #f5f5f5;
+  padding: 10px;
+  margin: 10px;
 }
+
 .tienda {
-display: flex;
-justify-content: space-evenly;
-margin: 0; padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
 }
-.tienda-productos{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax (600px, 1fr));
-    margin: 10px;
-    padding: 10px;
+
+.tienda-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax 600px, 1fr);
+  margin: 10px;
+  padding: 10px;
 }
+
 .productos {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
-.productos li{
-    padding: 5px;
-    margin: 5px;
-    border: solid black 1px;
-    border-radius: 3px;
-    overflow: hidden;
-    background-color: white;
+
+.productos li {
+  padding: 5px;
+  margin: 5px;
+  border: solid black 1px;
+  border-radius: 3px;
+  overflow: hidden;
+  background-color: white;
 }
+
 .productos li img {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    object-fit: cover;
-    transition: 1s;
-    align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  object-fit: cover;
+  transition: 1s;
+  align-items: center;
 }
+
 .productos li img:hover {
-    width: 170px;
+  width: 170px;
 }
+
 .tienda-fisica {
-    margin: 10px;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    margin: 10px;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
 }
+
 .tienda-fisica-card {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    align-content: center;
-    align-items: center;
-    border: solid black 1px;
-    border-radius: 3px;
-    overflow: hidden;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-content: center;
+  align-items: center;
+  border: solid black 1px;
+  border-radius: 3px;
+  overflow: hidden;
 }
+
 .tienda-fisica-card a img {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    object-fit: cover;
-    transition: 2s;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  object-fit: cover;
+  transition: 2s;
 }
+
 .tienda-fisica-card a img:hover {
-    width: 120%;
-} 
+  width: 120%;
+}
+
 #styling {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax (600px, 1fr));
-    background-color: #f5f5f5;
-    padding: 10px;
-    margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax 600px, 1fr);
+  background-color: #f5f5f5;
+  padding: 10px;
+  margin: 10px;
 }
+
 .style-clips {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
+
 .clips {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 .clips div {
-    padding: 10px; 
+  padding: 10px;
 }
+
 .clips div iframe {
-    height: 315px;
-    width: 560px; 
-    border: solid black 1px;
-    border-radius: 3px;
+  height: 315px;
+  width: 560px;
+  border: solid black 1px;
+  border-radius: 3px;
 }
+
 .looks {
-   display: flex;
-   justify-content: space-around; 
-   row-gap: 10px;
+  display: flex;
+  justify-content: space-around;
+  row-gap: 10px;
 }
+
 .looks-fotos {
-    display: flex;
-   justify-content: space-around; 
+  display: flex;
+  justify-content: space-around;
 }
+
 .looks-fotos a {
- padding: 30px;
+  padding: 30px;
 }
+
 .looks-fotos a img {
-    width: 250px;
-    object-fit: cover;
-    border: solid black 1px;
-    border-radius: 3px;
-    transition: 1s;
+  width: 250px;
+  object-fit: cover;
+  border: solid black 1px;
+  border-radius: 3px;
+  transition: 1s;
 }
+
 .looks-fotos a img:hover {
-    width: 200px;
+  width: 200px;
 }
+
 #events {
-    background-color: #f5f5f5;
-    padding: 10px;
-    margin: 10px;
+  background-color: #f5f5f5;
+  padding: 10px;
+  margin: 10px;
 }
+
 .col {
-    object-fit: cover;
-    align-items: center;
-    justify-content: center;
+  object-fit: cover;
+  align-items: center;
+  justify-content: center;
 }
+
 .col img {
-    width: 100%;
-    border: solid black 1px;
-    border-radius: 3px;
-    
-    transition: 1s;
+  width: 100%;
+  border: solid black 1px;
+  border-radius: 3px;
+  transition: 1s;
 }
-.col img:hover{
-    width: 80%;
+
+.col img:hover {
+  width: 80%;
 }
+
 .linkeventos {
-    width: 100%;
-    object-fit: cover;
- }
- #us {
-    background-color: #f5f5f5;
-    padding: 10px;
-    margin: 10px;
- }
- .nosotros {
-    display: flex;
-    position: relative;
-    margin: 10px;
-    border: solid black 1px;
-    border-radius: 3px;
- }
- .nosotros img {
-    width: 100%;
-    object-fit: cover;
- }
- .nosotros-texto {
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.094);
-    width: 100%;
-    height: 100%;
- }
- .nosotros-texto p{
-    color: whitesmoke;
-    font-family: "Rubik", sans-serif;
-    font-variant-caps: all-small-caps;
-    font-size:x-large;
-    font-weight: 800;
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
-    margin: 15px;
- }
- #contact{
-    background-color: #f5f5f5;
-    padding: 10px;
-    margin: 10px; 
- }
- .row {
-    align-items: center;
- }
- .contacto-datos {
-list-style: none;
- }
- .col iframe {
-    width: 100%;
-    height: 100%;
-    width: 400px;
-    height: 400px;
-    border: solid black 1px;
-    border-radius: 3px;
- }
- .contacto-datos li p {
-    font-family: "Rubik", sans-serif;
-        color: black;
-        font-variant-caps: all-small-caps;
-        font-weight: 500;
- }
- .mb-3 label p {
-    font-family: "Rubik", sans-serif;
-    color: black;
-    font-variant-caps: all-small-caps;
-    font-weight: 500; 
- }
- .grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    border: solid black 1px;
-    border-radius: 5px;
-    margin: 10px;
-    background-color: #f5f5f5;
- }
- .g-col-4 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border: solid black 1px;
-    border-radius: 5px; 
-    margin: 15px;
-    font-family: "Rubik", sans-serif;
-    color: black;
-    font-variant-caps: all-small-caps;
-    font-weight: 500;
-    font-size: medium;
-    background-color: white;
- }
- .g-col-4 p {
-  margin-bottom: 0;
- }
- .g-col-4 ul{
-    padding: 0;
-    margin-bottom: 0;
-   }
- .g-col-4 ul li {
-    list-style: none;
-    padding: 10px;
- }
- .g-col-4 ul li a {
-    text-decoration: none;
-    font-family: "Rubik", sans-serif;
-    color: black;
-    font-variant-caps: all-small-caps;
-    font-weight: 500; 
- }
- .g-col-4 ul li button{
-    border-radius: 3px;
- }
- .g-col-4 a img {
-    width: 20%;
-    margin-left: 8px;
- }
- .g-col-4 h4 {
-    margin-left: 0;  
-    margin-bottom: 0;
- }
- .camisas {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax (600px, 1fr));
-    padding: 10px;
-    margin: 10px;
-    background-color: #f5f5f5;
- }
- .tienda-camisas {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 0; padding: 0;
-    }
-    .productos-camisas{
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax (600px, 1fr));
-        margin: 10px;
-        padding: 10px;
-    }
-    .productos-items {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
-    .productos-items li{
-        padding: 5px;
-        margin: 5px;
-        border: solid black 1px;
-        border-radius: 3px;
-        overflow: hidden;
-        background-color: white;
-    }
-    .productos-items li img {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        object-fit: cover;
-        transition: 1s;
-        align-items: center;
-    }
-    .productos-items li img:hover {
-        width: 120%;
-    }
-    .eventos {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax (600px, 1fr));
-        padding: 10px;
-        margin: 10px;
-        background-color: #f5f5f5;
-    }
-    .articulo {
-        display: flex;
-        justify-content: space-around;
-    }
-    .articulo-cajas {
-        display: flex;
-        flex-direction: column;
-    }
-    .articulo-cajas-footer {
-        display: flex;
-        justify-content: space-around;
-    }
-    .jevi-portada{
-        padding: 10px;
-    }
-    .jevi-portada img {
-        width: 85%;
-        object-fit: cover;
-        border: solid black 1px;
-        border-radius: 3px; 
-    }
-    .jevi-retratos {
-        display: flex;
-        justify-content: space-around;
-        padding: 10px;
-    }
-    .jevi-retratos img{
-        width: 40%;
-        object-fit: cover;
-        border: solid black 1px;
-        border-radius: 3px; 
-    }
-    .jevi-tienda{
-        padding: 10px;
-    }
-    .jevi-tienda img {
-        width: 420px;
-        object-fit: cover;
-        border: solid black 1px;
-        border-radius: 3px; 
-    }
-@media (max-width:780px){
-.tienda {
-    flex-direction: column;
+  width: 100%;
+  object-fit: cover;
 }
-.g-col-4 {
-    font-size: small  
+
+#us {
+  background-color: #f5f5f5;
+  padding: 10px;
+  margin: 10px;
 }
-.g-col-4 h4 {
-    font-size: medium
+
+.nosotros {
+  display: flex;
+  position: relative;
+  margin: 10px;
+  border: solid black 1px;
+  border-radius: 3px;
 }
+
+.nosotros img {
+  width: 100%;
+  object-fit: cover;
 }
-@media (max-width:1190px) {
-    .style-clips {
-        flex-direction: column;  
-       }
-    .clips div iframe{
-        height: 515px;
-        width: 760px;   
-    }
-    .looks {
-     flex-direction: column;
-    }
-    .looks-fotos a img {
-        width: 350px;
-    }
-    .col iframe {
-        width: 350px;
-        height: 350px;}
-     .camisas {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax (400px, 1fr)); 
-     }
+
+.nosotros-texto {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.094);
+  width: 100%;
+  height: 100%;
 }
-    @media (max-width:840px){
-        .clips div iframe{
-            height: 315px;
-            width: 560px;   
-        } 
-        #styling {
-            display: flex;
-            flex-direction: column;
-        } 
-        .looks-fotos a img {
-            width: 250px;  
-        }
-    }
-    @media (max-width:680px){
-        .clips div iframe{
-            height: 250px;
-            width: 400px;  
-    }
-    .looks-fotos a img {
-        width: 180px;  
-    }
+
+.nosotros-texto p {
+  color: whitesmoke;
+  font-family: "Rubik", sans-serif;
+  font-variant-caps: all-small-caps;
+  font-size: x-large;
+  font-weight: 800;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
+  margin: 15px;
 }
-@media (max-width:500px){
-    .clips div iframe{
-        height: 180px;
-        width: 350px;  
+
+#contact {
+  background-color: #f5f5f5;
+  padding: 10px;
+  margin: 10px;
 }
-.looks-fotos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+.row {
+  align-items: center;
 }
-.looks-fotos a img {
-    width: 300px;  
+
+.contacto-datos {
+  list-style: none;
 }
+
+.col iframe {
+  width: 100%;
+  height: 100%;
+  width: 400px;
+  height: 400px;
+  border: solid black 1px;
+  border-radius: 3px;
+}
+
+.contacto-datos li p {
+  font-family: "Rubik", sans-serif;
+  color: black;
+  font-variant-caps: all-small-caps;
+  font-weight: 500;
+}
+
+.mb-3 label p {
+  font-family: "Rubik", sans-serif;
+  color: black;
+  font-variant-caps: all-small-caps;
+  font-weight: 500;
+}
+
 .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: solid black 1px;
+  border-radius: 5px;
+  margin: 10px;
+  background-color: #f5f5f5;
+}
+
+.g-col-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: solid black 1px;
+  border-radius: 5px;
+  margin: 15px;
+  font-family: "Rubik", sans-serif;
+  color: black;
+  font-variant-caps: all-small-caps;
+  font-weight: 500;
+  font-size: medium;
+  background-color: white;
+}
+
+.g-col-4 p {
+  margin-bottom: 0;
+}
+
+.g-col-4 ul {
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.g-col-4 ul li {
+  list-style: none;
+  padding: 10px;
+}
+
+.g-col-4 ul li a {
+  text-decoration: none;
+  font-family: "Rubik", sans-serif;
+  color: black;
+  font-variant-caps: all-small-caps;
+  font-weight: 500;
+}
+
+.g-col-4 ul li button {
+  border-radius: 3px;
+}
+
+.g-col-4 a img {
+  width: 20%;
+  margin-left: 8px;
+}
+
+.g-col-4 h4 {
+  margin-left: 0;
+  margin-bottom: 0;
+}
+
+.camisas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax 600px, 1fr);
+  padding: 10px;
+  margin: 10px;
+  background-color: #f5f5f5;
+}
+
+.tienda-camisas {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
+}
+
+.productos-camisas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax 600px, 1fr);
+  margin: 10px;
+  padding: 10px;
+}
+
+.productos-items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.productos-items li {
+  padding: 5px;
+  margin: 5px;
+  border: solid black 1px;
+  border-radius: 3px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.productos-items li img {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  object-fit: cover;
+  transition: 1s;
+  align-items: center;
+}
+
+.productos-items li img:hover {
+  width: 120%;
+}
+
+.eventos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax 600px, 1fr);
+  padding: 10px;
+  margin: 10px;
+  background-color: #f5f5f5;
+}
+
+.articulo {
+  display: flex;
+  justify-content: space-around;
+}
+
+.articulo-cajas {
+  display: flex;
+  flex-direction: column;
+}
+
+.articulo-cajas-footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.jevi-portada {
+  padding: 10px;
+}
+
+.jevi-portada img {
+  width: 85%;
+  object-fit: cover;
+  border: solid black 1px;
+  border-radius: 3px;
+}
+
+.jevi-retratos {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.jevi-retratos img {
+  width: 40%;
+  object-fit: cover;
+  border: solid black 1px;
+  border-radius: 3px;
+}
+
+.jevi-tienda {
+  padding: 10px;
+}
+
+.jevi-tienda img {
+  width: 420px;
+  object-fit: cover;
+  border: solid black 1px;
+  border-radius: 3px;
+}
+
+@media (max-width: 780px) {
+  .tienda {
+    flex-direction: column;
+  }
+  .g-col-4 {
+    font-size: small;
+  }
+  .g-col-4 h4 {
+    font-size: medium;
+  }
+}
+@media (max-width: 1190px) {
+  .style-clips {
+    flex-direction: column;
+  }
+  .clips div iframe {
+    height: 515px;
+    width: 760px;
+  }
+  .looks {
+    flex-direction: column;
+  }
+  .looks-fotos a img {
+    width: 350px;
+  }
+  .col iframe {
+    width: 350px;
+    height: 350px;
+  }
+  .camisas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax 400px, 1fr);
+  }
+}
+@media (max-width: 840px) {
+  .clips div iframe {
+    height: 315px;
+    width: 560px;
+  }
+  #styling {
     display: flex;
     flex-direction: column;
+  }
+  .looks-fotos a img {
+    width: 250px;
+  }
 }
-.g-col-4 a img{
+@media (max-width: 680px) {
+  .clips div iframe {
+    height: 250px;
+    width: 400px;
+  }
+  .looks-fotos a img {
+    width: 180px;
+  }
+}
+@media (max-width: 500px) {
+  .clips div iframe {
+    height: 180px;
+    width: 350px;
+  }
+  .looks-fotos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .looks-fotos a img {
+    width: 300px;
+  }
+  .grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .g-col-4 a img {
     margin-top: 5px;
     width: 20%;
+  }
 }
+@media (max-width: 390px) {
+  .clips div iframe {
+    height: 180px;
+    width: 250px;
+  }
+  .looks-fotos a img {
+    width: 220px;
+  }
 }
-@media (max-width:390px){
-    .clips div iframe{
-        height: 180px;
-        width: 250px;  
+@media (max-width: 510px) {
+  .col h3 {
+    padding: 5px;
+    font-size: x-small;
+  }
+  .row {
+    row-gap: 2px;
+  }
 }
-.looks-fotos a img {
-    width: 220px;  
+@media (max-width: 345px) {
+  .row {
+    flex-direction: column;
+  }
+  .col h3 {
+    font-size: medium;
+  }
 }
+@media (max-width: 880px) {
+  .nosotros-texto p {
+    font-size: large;
+    font-weight: 800;
+  }
+  .g-col-4 a img {
+    width: 30%;
+  }
 }
-@media (max-width:510px){
-    .col h3 {
-        padding: 5px;
-        font-size: x-small;
-    } 
-    .row {
-      row-gap: 2px;  
-    }
+@media (max-width: 700px) {
+  .nosotros-texto p {
+    font-size: small;
+    font-weight: 800;
+  }
 }
-@media (max-width:345px){
-    .row {
-       flex-direction: column;
-    }
-    .col h3 {
-        font-size: medium;
-    }
+@media (max-width: 530px) {
+  .nosotros-texto p {
+    font-size: x-small;
+    font-weight: 800;
+  }
 }
-@media (max-width:880px){
-    .nosotros-texto p{
-        font-size: large;
-        font-weight: 800;
-    } 
-    .g-col-4 a img {
-        width: 30%;
-    } 
+@media (max-width: 430px) {
+  .nosotros {
+    flex-direction: column;
+  }
+  .nosotros img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-bottom: solid black 1px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+  .nosotros-texto {
+    position: relative;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+  }
+  .nosotros-texto p {
+    color: black;
+    font-family: "Rubik", sans-serif;
+    font-variant-caps: all-small-caps;
+    font-size: medium;
+    font-weight: 800;
+    text-shadow: none;
+    margin: 15px;
+  }
+  .productos-items {
+    display: flex;
+    flex-direction: column;
+  }
 }
-@media (max-width:700px){
-    .nosotros-texto p{
-        font-size: small;
-        font-weight: 800;
-    }  
+@media (max-width: 350px) {
+  .nosotros-texto p {
+    font-size: small;
+  }
 }
-@media (max-width:530px){
-    .nosotros-texto p{
-        font-size: x-small;
-        font-weight: 800;
-    }  
-}
-@media (max-width:430px){
-    .nosotros {
-        flex-direction: column;
-     }
-     .nosotros img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-bottom: solid black 1px;
-        border-bottom-left-radius: 3px;
-        border-bottom-right-radius: 3px;
-     }
-     .nosotros-texto {
-        position: relative;
-        background-color: white;
-        width: 100%;
-        height: 100%;
-     }
-     .nosotros-texto p{
-        color: black;
-        font-family: "Rubik", sans-serif;
-        font-variant-caps: all-small-caps;
-        font-size:medium;
-        font-weight: 800;
-        text-shadow: none;
-        margin: 15px;
-     } 
-     .productos-items {
-        display: flex;
-        flex-direction: column;
-     }
-}
-@media (max-width:350px){
-    .nosotros-texto p{
-        font-size:small; 
-    }
-}
-@media (max-width:780px){
-    .col iframe {
+@media (max-width: 780px) {
+  .col iframe {
     width: 200px;
     height: 200px;
+  }
 }
-}
-@media (max-width:545px){
-    .col iframe {
+@media (max-width: 545px) {
+  .col iframe {
     width: 400px;
     height: 400px;
+  }
 }
-}
-@media (max-width:480px){
-    .col iframe {
+@media (max-width: 480px) {
+  .col iframe {
     width: 200px;
     height: 200px;
+  }
 }
-}
-@media (max-width:420px){
-    .col iframe {
+@media (max-width: 420px) {
+  .col iframe {
     width: 150px;
     height: 150px;
+  }
 }
-}
+
+/*# sourceMappingURL=style.css.map */
