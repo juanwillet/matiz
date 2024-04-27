@@ -111,20 +111,33 @@ h3 {
   overflow: hidden;
   background-color: white;
 }
-
+.productos li :hover {
+  width: 170px;
+}
 .productos li img {
   margin: 0;
   padding: 0;
   width: 100%;
   object-fit: cover;
-  transition: 1s;
   align-items: center;
+  transition: 1s;
 }
 
-.productos li img:hover {
-  width: 170px;
-}
+/*.productos li img {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    object-fit: cover;
+    transition: 1s;
+    align-items: center;
 
+    & :hover {
+        width: 170px;
+    }
+}
+/*.productos li img:hover {
+    width: 170px;
+}*/
 .tienda-fisica {
   padding: 10px;
   display: flex;
@@ -199,7 +212,9 @@ h3 {
 .looks-fotos a {
   padding: 30px;
 }
-
+.looks-fotos a :hover {
+  width: 200px;
+}
 .looks-fotos a img {
   width: 250px;
   object-fit: cover;
@@ -208,10 +223,16 @@ h3 {
   transition: 1s;
 }
 
-.looks-fotos a img:hover {
-  width: 200px;
+/*.looks-fotos a img {
+    width: 250px;
+    object-fit: cover;
+    border: $border;
+    border-radius: $radius;
+    transition: 1s;
 }
-
+.looks-fotos a img:hover {
+    width: 200px;
+}*/
 #events {
   background-color: #f5f5f5;
   padding: 10px;
@@ -224,17 +245,19 @@ h3 {
   justify-content: center;
 }
 
-.col img {
+.col-img img {
   width: 100%;
   border: solid black 1px;
   border-radius: 3px;
   transition: 1s;
 }
-
-.col img:hover {
+.col-img :hover {
   width: 80%;
 }
 
+/*.col img:hover{
+    width: 80%;
+}*/
 .linkeventos {
   width: 100%;
   object-fit: cover;
@@ -411,7 +434,9 @@ h3 {
   overflow: hidden;
   background-color: white;
 }
-
+.productos-items li :hover {
+  width: 120%;
+}
 .productos-items li img {
   margin: 0;
   padding: 0;
@@ -421,10 +446,17 @@ h3 {
   align-items: center;
 }
 
-.productos-items li img:hover {
-  width: 120%;
+/*.productos-items li img {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    object-fit: cover;
+    transition: 1s;
+    align-items: center;
 }
-
+.productos-items li img:hover {
+    width: 120%;
+}*/
 .eventos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax 600px, 1fr);

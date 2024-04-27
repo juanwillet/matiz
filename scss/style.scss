@@ -103,18 +103,34 @@ padding: 0;
     border-radius: $radius;
     overflow: hidden;
     background-color: $main-background;
+
+    & :hover {
+        width: 170px;
+    }
+    img {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        object-fit: cover;
+        align-items: center;
+        transition: 1s;
+    }
 }
-.productos li img {
+/*.productos li img {
     margin: 0;
     padding: 0;
     width: 100%;
     object-fit: cover;
     transition: 1s;
     align-items: center;
+
+    & :hover {
+        width: 170px;
+    }
 }
-.productos li img:hover {
+/*.productos li img:hover {
     width: 170px;
-}
+}*/
 .tienda-fisica {
     padding: $padding-box;
     display: flex;
@@ -177,8 +193,20 @@ padding: 0;
 }
 .looks-fotos a {
  padding: 30px;
+
+ & :hover {
+    width: 200px;
+ }
+
+ img {
+    width: 250px;
+    object-fit: cover;
+    border: $border;
+    border-radius: $radius;
+    transition: 1s;
+ }
 }
-.looks-fotos a img {
+/*.looks-fotos a img {
     width: 250px;
     object-fit: cover;
     border: $border;
@@ -187,7 +215,7 @@ padding: 0;
 }
 .looks-fotos a img:hover {
     width: 200px;
-}
+}*/
 #events {
     background-color: $secondary-background;
     padding: $padding-box;
@@ -198,15 +226,20 @@ padding: 0;
     align-items: center;
     justify-content: center;
 }
-.col img {
+.col-img {
+    img {
     width: 100%;
     border: $border;
     border-radius: $radius;
     transition: 1s;
+    }
+    & :hover {
+        width: 80%; 
+    }
 }
-.col img:hover{
+/*.col img:hover{
     width: 80%;
-}
+}*/
 .linkeventos {
     width: 100%;
     object-fit: cover;
@@ -357,8 +390,21 @@ list-style: none;
         border-radius: $radius;
         overflow: hidden;
         background-color: $main-background;
+
+        & :hover {
+          width: 120%;
+        }
+
+        img {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        object-fit: cover;
+        transition: 1s;
+        align-items: center;
+        }
     }
-    .productos-items li img {
+    /*.productos-items li img {
         margin: 0;
         padding: 0;
         width: 100%;
@@ -368,7 +414,7 @@ list-style: none;
     }
     .productos-items li img:hover {
         width: 120%;
-    }
+    }*/
     .eventos {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax (600px, 1fr));
