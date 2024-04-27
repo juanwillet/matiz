@@ -1,3 +1,16 @@
+$main-font: "Rubik", sans-serif; 
+$main-background: white;
+$secondary-background: #f5f5f5;
+$border: solid black 1px;
+$radius: 3px; 
+$margin-box: 20px;
+$second-margin-box: 10px;
+$padding-box: 10px;
+
+* { margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 header {
     position: sticky;
     top: 0;
@@ -10,13 +23,13 @@ header {
     width: 60px;
 }
 .nav-link {
-    font-family: "Rubik", sans-serif;
+    font-family: $main-font;
     color: black;
     font-variant-caps: all-small-caps;
     font-weight: 500;
 }
 .dropdown-item {
-    font-family: "Rubik", sans-serif;
+    font-family: $main-font;
     color: black;
     font-variant-caps: all-small-caps;
     font-weight: 500;
@@ -27,53 +40,54 @@ header {
 .banner a img {
     width: 100%;
     object-fit: cover;
-    border: solid black 1px;
-    border-radius: 3px;
+    border: $border;
+    border-radius: $radius; 
 }
 .banner {
     padding: 20px;
 }
 h2 {
     text-align: center;
-    font-family: "Rubik", sans-serif;
+    font-family: $main-font;
         color: black;
         font-variant-caps: all-small-caps;
         font-weight: 500;
         list-style: none;
-        padding: 15px;
-        background-color: white;
-    margin: 20px;
-    border: solid black 1px
+        padding: $padding-box;
+        background-color: $main-background;
+    margin: $margin-box;
+    border: $border;
 }
 h3 {
     text-align: center;
-    font-family: "Rubik", sans-serif;
+    font-family: $main-font;
         color: black;
         font-variant-caps: all-small-caps;
         font-weight: 500;
         list-style: none;
-        padding: 15px;
-        background-color: white;
-    margin: 20px;
-    border: solid black 1px
+        padding: $padding-box;
+        background-color: $main-background;
+    margin: $margin-box;
+    border: $border;
 }
 #shop {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax (1000px, 1fr));
-    background-color: #f5f5f5;
-    padding: 10px;
-    margin: 10px;
+    background-color: $secondary-background;
+    padding: $padding-box;
+    margin: $margin-box;
 }
 .tienda {
 display: flex;
 justify-content: space-evenly;
-margin: 0; padding: 0;
+margin: 0; 
+padding: 0;
 }
 .tienda-productos{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax (600px, 1fr));
-    margin: 10px;
-    padding: 10px;
+    margin: $second-margin-box;
+    padding: $padding-box;
 }
 .productos {
     margin: 0;
@@ -85,10 +99,10 @@ margin: 0; padding: 0;
 .productos li{
     padding: 5px;
     margin: 5px;
-    border: solid black 1px;
-    border-radius: 3px;
+    border: $border;
+    border-radius: $radius;
     overflow: hidden;
-    background-color: white;
+    background-color: $main-background;
 }
 .productos li img {
     margin: 0;
@@ -102,11 +116,10 @@ margin: 0; padding: 0;
     width: 170px;
 }
 .tienda-fisica {
-    margin: 10px;
-    padding: 10px;
+    padding: $padding-box;
     display: flex;
     justify-content: center;
-    margin: 10px;
+    margin: $second-margin-box;
 }
 .tienda-fisica-card {
     display: flex;
@@ -114,8 +127,8 @@ margin: 0; padding: 0;
     padding: 0;
     align-content: center;
     align-items: center;
-    border: solid black 1px;
-    border-radius: 3px;
+    border: $border;
+    border-radius: $radius;
     overflow: hidden;
 }
 .tienda-fisica-card a img {
@@ -131,9 +144,9 @@ margin: 0; padding: 0;
 #styling {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax (600px, 1fr));
-    background-color: #f5f5f5;
-    padding: 10px;
-    margin: 10px;
+    background-color: $secondary-background;
+    padding: $padding-box;
+    margin: $margin-box;
 }
 .style-clips {
     display: flex;
@@ -145,13 +158,13 @@ margin: 0; padding: 0;
     align-items: center;
 }
 .clips div {
-    padding: 10px; 
+    padding: $padding-box; 
 }
 .clips div iframe {
     height: 315px;
     width: 560px; 
-    border: solid black 1px;
-    border-radius: 3px;
+    border: $border;
+    border-radius: $radius;
 }
 .looks {
    display: flex;
@@ -168,17 +181,17 @@ margin: 0; padding: 0;
 .looks-fotos a img {
     width: 250px;
     object-fit: cover;
-    border: solid black 1px;
-    border-radius: 3px;
+    border: $border;
+    border-radius: $radius;
     transition: 1s;
 }
 .looks-fotos a img:hover {
     width: 200px;
 }
 #events {
-    background-color: #f5f5f5;
-    padding: 10px;
-    margin: 10px;
+    background-color: $secondary-background;
+    padding: $padding-box;
+    margin: $margin-box;
 }
 .col {
     object-fit: cover;
@@ -187,9 +200,8 @@ margin: 0; padding: 0;
 }
 .col img {
     width: 100%;
-    border: solid black 1px;
-    border-radius: 3px;
-    
+    border: $border;
+    border-radius: $radius;
     transition: 1s;
 }
 .col img:hover{
@@ -200,16 +212,16 @@ margin: 0; padding: 0;
     object-fit: cover;
  }
  #us {
-    background-color: #f5f5f5;
-    padding: 10px;
-    margin: 10px;
+    background-color: $secondary-background;
+    padding: $padding-box;
+    margin: $margin-box;
  }
  .nosotros {
     display: flex;
     position: relative;
-    margin: 10px;
-    border: solid black 1px;
-    border-radius: 3px;
+    margin: $second-margin-box;
+    border: $border;
+    border-radius: $radius;
  }
  .nosotros img {
     width: 100%;
@@ -223,17 +235,17 @@ margin: 0; padding: 0;
  }
  .nosotros-texto p{
     color: whitesmoke;
-    font-family: "Rubik", sans-serif;
+    font-family: $main-font;
     font-variant-caps: all-small-caps;
     font-size:x-large;
     font-weight: 800;
     text-shadow: 1px 1px rgba(0, 0, 0, 0.437);
-    margin: 15px;
+    margin: $margin-box;
  }
  #contact{
-    background-color: #f5f5f5;
-    padding: 10px;
-    margin: 10px; 
+    background-color: $secondary-background;
+    padding: $padding-box;
+    margin: $margin-box; 
  }
  .row {
     align-items: center;
@@ -246,17 +258,17 @@ list-style: none;
     height: 100%;
     width: 400px;
     height: 400px;
-    border: solid black 1px;
-    border-radius: 3px;
+    border: $border;
+    border-radius: $radius;
  }
  .contacto-datos li p {
-    font-family: "Rubik", sans-serif;
+    font-family: $main-font;
         color: black;
         font-variant-caps: all-small-caps;
         font-weight: 500;
  }
  .mb-3 label p {
-    font-family: "Rubik", sans-serif;
+    font-family: $main-font;
     color: black;
     font-variant-caps: all-small-caps;
     font-weight: 500; 
@@ -264,24 +276,24 @@ list-style: none;
  .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    border: solid black 1px;
+    border: $border;
     border-radius: 5px;
-    margin: 10px;
-    background-color: #f5f5f5;
+    margin: $second-margin-box;
+    background-color: $secondary-background;
  }
  .g-col-4 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: solid black 1px;
+    border: $border;
     border-radius: 5px; 
-    margin: 15px;
-    font-family: "Rubik", sans-serif;
+    margin: $margin-box;
+    font-family: $main-font;
     color: black;
     font-variant-caps: all-small-caps;
     font-weight: 500;
     font-size: medium;
-    background-color: white;
+    background-color: $main-background;
  }
  .g-col-4 p {
   margin-bottom: 0;
@@ -292,17 +304,17 @@ list-style: none;
    }
  .g-col-4 ul li {
     list-style: none;
-    padding: 10px;
+    padding: $padding-box;
  }
  .g-col-4 ul li a {
     text-decoration: none;
-    font-family: "Rubik", sans-serif;
+    font-family: $main-font;
     color: black;
     font-variant-caps: all-small-caps;
     font-weight: 500; 
  }
  .g-col-4 ul li button{
-    border-radius: 3px;
+    border-radius: $radius;
  }
  .g-col-4 a img {
     width: 20%;
@@ -315,20 +327,21 @@ list-style: none;
  .camisas {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax (600px, 1fr));
-    padding: 10px;
-    margin: 10px;
-    background-color: #f5f5f5;
+    padding: $padding-box;
+    margin: $margin-box;
+    background-color: $secondary-background;
  }
  .tienda-camisas {
     display: flex;
     justify-content: space-evenly;
-    margin: 0; padding: 0;
+    margin: 0; 
+    padding: 0;
     }
     .productos-camisas{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax (600px, 1fr));
-        margin: 10px;
-        padding: 10px;
+        margin: $second-margin-box;
+        padding: $padding-box;
     }
     .productos-items {
         margin: 0;
@@ -340,10 +353,10 @@ list-style: none;
     .productos-items li{
         padding: 5px;
         margin: 5px;
-        border: solid black 1px;
-        border-radius: 3px;
+        border: $border;
+        border-radius: $radius;
         overflow: hidden;
-        background-color: white;
+        background-color: $main-background;
     }
     .productos-items li img {
         margin: 0;
@@ -359,9 +372,9 @@ list-style: none;
     .eventos {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax (600px, 1fr));
-        padding: 10px;
-        margin: 10px;
-        background-color: #f5f5f5;
+        padding: $padding-box;
+        margin: $second-margin-box;
+        background-color: $secondary-background;
     }
     .articulo {
         display: flex;
@@ -376,33 +389,33 @@ list-style: none;
         justify-content: space-around;
     }
     .jevi-portada{
-        padding: 10px;
+        padding: $padding-box;
     }
     .jevi-portada img {
         width: 85%;
         object-fit: cover;
-        border: solid black 1px;
-        border-radius: 3px; 
+        border: $border;
+        border-radius: $radius; 
     }
     .jevi-retratos {
         display: flex;
         justify-content: space-around;
-        padding: 10px;
+        padding: $padding-box;
     }
     .jevi-retratos img{
         width: 40%;
         object-fit: cover;
-        border: solid black 1px;
-        border-radius: 3px; 
+        border: $border;
+        border-radius: $radius; 
     }
     .jevi-tienda{
-        padding: 10px;
+        padding: $padding-box;
     }
     .jevi-tienda img {
         width: 420px;
         object-fit: cover;
-        border: solid black 1px;
-        border-radius: 3px; 
+        border: $border;
+        border-radius: $radius; 
     }
 @media (max-width:780px){
 .tienda {
