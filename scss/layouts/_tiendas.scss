@@ -1,0 +1,46 @@
+.camisas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax (600px, 1fr));
+    padding: $padding-box;
+    margin: $margin-box;
+    background-color: $secondary-background;
+ }
+ .tienda-camisas {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0; 
+    padding: 0;
+    }
+    .productos-camisas{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax (600px, 1fr));
+        margin: $second-margin-box;
+        padding: $padding-box;
+    }
+    .productos-items {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .productos-items li{
+        padding: 5px;
+        margin: 5px;
+        border: $border;
+        border-radius: $radius;
+        overflow: hidden;
+        background-color: $main-background;
+
+        & :hover {
+          width: 120%;
+        }
+
+        img {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        object-fit: cover;
+        transition: 1s;
+        }
+    }

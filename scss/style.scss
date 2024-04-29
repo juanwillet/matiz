@@ -37,15 +37,6 @@ header {
 .fa-brands {
     color: black;
 }
-.banner a img {
-    width: 100%;
-    object-fit: cover;
-    border: $border;
-    border-radius: $radius; 
-}
-.banner {
-    padding: 20px;
-}
 h2 {
     text-align: center;
     font-family: $main-font;
@@ -69,6 +60,15 @@ h3 {
         background-color: $main-background;
     margin: $margin-box;
     border: $border;
+}
+.banner a img {
+    width: 100%;
+    object-fit: cover;
+    border: $border;
+    border-radius: $radius; 
+}
+.banner {
+    padding: 20px;
 }
 #shop {
     display: grid;
@@ -116,21 +116,6 @@ padding: 0;
         transition: 1s;
     }
 }
-/*.productos li img {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    object-fit: cover;
-    transition: 1s;
-    align-items: center;
-
-    & :hover {
-        width: 170px;
-    }
-}
-/*.productos li img:hover {
-    width: 170px;
-}*/
 .tienda-fisica {
     padding: $padding-box;
     display: flex;
@@ -146,17 +131,18 @@ padding: 0;
     border: $border;
     border-radius: $radius;
     overflow: hidden;
-}
-.tienda-fisica-card a img {
-    margin: 0;
+
+    & :hover {
+     width: 120%; 
+    }
+    img {
+        margin: 0;
     padding: 0;
     width: 100%;
     object-fit: cover;
-    transition: 2s;
+    transition: 2s;  
+    }
 }
-.tienda-fisica-card a img:hover {
-    width: 120%;
-} 
 #styling {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax (600px, 1fr));
@@ -206,16 +192,6 @@ padding: 0;
     transition: 1s;
  }
 }
-/*.looks-fotos a img {
-    width: 250px;
-    object-fit: cover;
-    border: $border;
-    border-radius: $radius;
-    transition: 1s;
-}
-.looks-fotos a img:hover {
-    width: 200px;
-}*/
 #events {
     background-color: $secondary-background;
     padding: $padding-box;
@@ -237,9 +213,6 @@ padding: 0;
         width: 80%; 
     }
 }
-/*.col img:hover{
-    width: 80%;
-}*/
 .linkeventos {
     width: 100%;
     object-fit: cover;
@@ -356,7 +329,6 @@ list-style: none;
  .g-col-4 h4 {
     margin-left: 0;  
     margin-bottom: 0;
-    
  }
  .camisas {
     display: grid;
@@ -371,26 +343,26 @@ list-style: none;
     margin: 0; 
     padding: 0;
     }
-    .productos-camisas{
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax (600px, 1fr));
-        margin: $second-margin-box;
-        padding: $padding-box;
+ .productos-camisas{
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax (600px, 1fr));
+     margin: $second-margin-box;
+     padding: $padding-box;
     }
     .productos-items {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+     margin: 0;
+     padding: 0;
+     list-style: none;
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
     }
     .productos-items li{
-        padding: 5px;
-        margin: 5px;
-        border: $border;
-        border-radius: $radius;
-        overflow: hidden;
-        background-color: $main-background;
+     padding: 5px;
+     margin: 5px;
+     border: $border;
+     border-radius: $radius;
+     overflow: hidden;
+     background-color: $main-background;
 
         & :hover {
           width: 120%;
@@ -402,67 +374,55 @@ list-style: none;
         width: 100%;
         object-fit: cover;
         transition: 1s;
-        align-items: center;
         }
     }
-    /*.productos-items li img {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        object-fit: cover;
-        transition: 1s;
-        align-items: center;
-    }
-    .productos-items li img:hover {
-        width: 120%;
-    }*/
     .eventos {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax (600px, 1fr));
-        padding: $padding-box;
-        margin: $second-margin-box;
-        background-color: $secondary-background;
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax (600px, 1fr));
+     padding: $padding-box;
+     margin: $second-margin-box;
+     background-color: $secondary-background;
     }
     .articulo {
-        display: flex;
-        justify-content: space-around;
+     display: flex;
+     justify-content: space-around;
     }
     .articulo-cajas {
-        display: flex;
-        flex-direction: column;
+     display: flex;
+     flex-direction: column;
     }
     .articulo-cajas-footer {
-        display: flex;
-        justify-content: space-around;
+     display: flex;
+     justify-content: space-around;
     }
     .jevi-portada{
-        padding: $padding-box;
+     padding: $padding-box;
     }
     .jevi-portada img {
-        width: 85%;
-        object-fit: cover;
-        border: $border;
-        border-radius: $radius; 
+     width: 85%;
+     object-fit: cover;
+     border: $border;
+     border-radius: $radius; 
     }
     .jevi-retratos {
-        display: flex;
-        justify-content: space-around;
-        padding: $padding-box;
+     display: flex;
+     justify-content: space-around;
+     padding: $padding-box;
     }
     .jevi-retratos img{
-        width: 40%;
-        object-fit: cover;
-        border: $border;
-        border-radius: $radius; 
+     width: 40%;
+     object-fit: cover;
+     border: $border;
+     border-radius: $radius; 
     }
     .jevi-tienda{
-        padding: $padding-box;
+     padding: $padding-box;
     }
     .jevi-tienda img {
-        width: 420px;
-        object-fit: cover;
-        border: $border;
-        border-radius: $radius; 
+     width: 420px;
+     object-fit: cover;
+     border: $border;
+     border-radius: $radius; 
     }
 @media (max-width:780px){
 .tienda {

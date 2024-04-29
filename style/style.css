@@ -36,17 +36,6 @@ header {
   color: black;
 }
 
-.banner a img {
-  width: 100%;
-  object-fit: cover;
-  border: solid black 1px;
-  border-radius: 3px;
-}
-
-.banner {
-  padding: 20px;
-}
-
 h2 {
   text-align: center;
   font-family: "Rubik", sans-serif;
@@ -71,6 +60,17 @@ h3 {
   background-color: white;
   margin: 20px;
   border: solid black 1px;
+}
+
+.banner a img {
+  width: 100%;
+  object-fit: cover;
+  border: solid black 1px;
+  border-radius: 3px;
+}
+
+.banner {
+  padding: 20px;
 }
 
 #shop {
@@ -123,21 +123,6 @@ h3 {
   transition: 1s;
 }
 
-/*.productos li img {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    object-fit: cover;
-    transition: 1s;
-    align-items: center;
-
-    & :hover {
-        width: 170px;
-    }
-}
-/*.productos li img:hover {
-    width: 170px;
-}*/
 .tienda-fisica {
   padding: 10px;
   display: flex;
@@ -155,17 +140,15 @@ h3 {
   border-radius: 3px;
   overflow: hidden;
 }
-
-.tienda-fisica-card a img {
+.tienda-fisica-card :hover {
+  width: 120%;
+}
+.tienda-fisica-card img {
   margin: 0;
   padding: 0;
   width: 100%;
   object-fit: cover;
   transition: 2s;
-}
-
-.tienda-fisica-card a img:hover {
-  width: 120%;
 }
 
 #styling {
@@ -223,16 +206,6 @@ h3 {
   transition: 1s;
 }
 
-/*.looks-fotos a img {
-    width: 250px;
-    object-fit: cover;
-    border: $border;
-    border-radius: $radius;
-    transition: 1s;
-}
-.looks-fotos a img:hover {
-    width: 200px;
-}*/
 #events {
   background-color: #f5f5f5;
   padding: 10px;
@@ -255,9 +228,6 @@ h3 {
   width: 80%;
 }
 
-/*.col img:hover{
-    width: 80%;
-}*/
 .linkeventos {
   width: 100%;
   object-fit: cover;
@@ -443,20 +413,8 @@ h3 {
   width: 100%;
   object-fit: cover;
   transition: 1s;
-  align-items: center;
 }
 
-/*.productos-items li img {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    object-fit: cover;
-    transition: 1s;
-    align-items: center;
-}
-.productos-items li img:hover {
-    width: 120%;
-}*/
 .eventos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax 600px, 1fr);

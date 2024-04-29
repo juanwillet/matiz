@@ -1,0 +1,26 @@
+header {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+.collapse {
+    justify-content: flex-end;
+}
+.navbar-brand img {
+    width: 60px;
+}
+.nav-link {
+    font-family: $main-font;
+    color: black;
+    font-variant-caps: all-small-caps;
+    font-weight: 500;
+}
+.dropdown-item {
+    font-family: $main-font;
+    color: black;
+    font-variant-caps: all-small-caps;
+    font-weight: 500;
+}
+.fa-brands {
+    color: black;
+}
