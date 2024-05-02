@@ -6,7 +6,24 @@ $radius: 3px;
 $margin-box: 20px;
 $second-margin-box: 10px;
 $padding-box: 10px;
-
+@mixin grid-repeat {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax (600px, 1fr));   
+}
+@mixin grid-repeat-secondary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+@mixin font-style {
+    font-family: $main-font;
+    color: black;
+    font-variant-caps: all-small-caps;
+    font-weight: 500;
+}
+@mixin flex ($display, $justify) {
+    display: $display;
+    justify-content: $justify;
+}
 * { margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -23,26 +40,29 @@ header {
     width: 60px;
 }
 .nav-link {
-    font-family: $main-font;
+    @include font-style;
+    /*font-family: $main-font;
     color: black;
     font-variant-caps: all-small-caps;
-    font-weight: 500;
+    font-weight: 500;*/
 }
 .dropdown-item {
-    font-family: $main-font;
+    @include font-style;
+    /*font-family: $main-font;
     color: black;
     font-variant-caps: all-small-caps;
-    font-weight: 500;
+    font-weight: 500;*/
 }
 .fa-brands {
     color: black;
 }
 h2 {
     text-align: center;
-    font-family: $main-font;
+    @include font-style;
+    /*font-family: $main-font;
         color: black;
         font-variant-caps: all-small-caps;
-        font-weight: 500;
+        font-weight: 500;*/
         list-style: none;
         padding: $padding-box;
         background-color: $main-background;
@@ -51,10 +71,11 @@ h2 {
 }
 h3 {
     text-align: center;
-    font-family: $main-font;
+    @include font-style;
+    /*font-family: $main-font;
         color: black;
         font-variant-caps: all-small-caps;
-        font-weight: 500;
+        font-weight: 500;*/
         list-style: none;
         padding: $padding-box;
         background-color: $main-background;
@@ -78,14 +99,16 @@ h3 {
     margin: $margin-box;
 }
 .tienda {
-display: flex;
-justify-content: space-evenly;
+@include flex (flex, space-evenly);
+/*display: flex;
+justify-content: space-evenly;*/
 margin: 0; 
 padding: 0;
 }
 .tienda-productos{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax (600px, 1fr));
+    @include grid-repeat;
+    /*display: grid;
+    grid-template-columns: repeat(auto-fit, minmax (600px, 1fr));*/
     margin: $second-margin-box;
     padding: $padding-box;
 }
@@ -93,8 +116,9 @@ padding: 0;
     margin: 0;
     padding: 0;
     list-style: none;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    @include grid-repeat-secondary;
+    /*display: grid;
+    grid-template-columns: repeat(3, 1fr);*/
 }
 .productos li{
     padding: 5px;
@@ -118,8 +142,9 @@ padding: 0;
 }
 .tienda-fisica {
     padding: $padding-box;
-    display: flex;
-    justify-content: center;
+    @include flex (flex, center);
+    /*display: flex;
+    justify-content: center;*/
     margin: $second-margin-box;
 }
 .tienda-fisica-card {
@@ -144,15 +169,17 @@ padding: 0;
     }
 }
 #styling {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax (600px, 1fr));
+    @include grid-repeat;
+    /*display: grid;
+    grid-template-columns: repeat(auto-fit, minmax (600px, 1fr));*/
     background-color: $secondary-background;
     padding: $padding-box;
     margin: $margin-box;
 }
 .style-clips {
-    display: flex;
-    justify-content: space-around;
+    @include flex (flex, space-around);
+    /*display: flex;
+    justify-content: space-around;*/
 }
 .clips {
     display: flex;
@@ -169,13 +196,15 @@ padding: 0;
     border-radius: $radius;
 }
 .looks {
-   display: flex;
-   justify-content: space-around; 
+    @include flex (flex, space-around);
+   /*display: flex;
+   justify-content: space-around;*/ 
    row-gap: 10px;
 }
 .looks-fotos {
-    display: flex;
-   justify-content: space-around; 
+    @include flex (flex, space-around);
+    /* display: flex;
+   justify-content: space-around;*/ 
 }
 .looks-fotos a {
  padding: 30px;
@@ -268,20 +297,23 @@ list-style: none;
     border-radius: $radius;
  }
  .contacto-datos li p {
-    font-family: $main-font;
+    @include font-style;
+    /*font-family: $main-font;
         color: black;
         font-variant-caps: all-small-caps;
-        font-weight: 500;
+        font-weight: 500;*/
  }
  .mb-3 label p {
-    font-family: $main-font;
+    @include font-style;
+    /*font-family: $main-font;
     color: black;
     font-variant-caps: all-small-caps;
-    font-weight: 500; 
+    font-weight: 500; */
  }
  .grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    @include grid-repeat-secondary;
+    /*display: grid;
+    grid-template-columns: repeat(3, 1fr);*/
     border: $border;
     border-radius: 5px;
     margin: $second-margin-box;
@@ -294,10 +326,11 @@ list-style: none;
     border: $border;
     border-radius: 5px; 
     margin: $margin-box;
-    font-family: $main-font;
+    @include font-style;
+    /*font-family: $main-font;
     color: black;
     font-variant-caps: all-small-caps;
-    font-weight: 500;
+    font-weight: 500;*/
     font-size: medium;
     background-color: $main-background;
  }
@@ -314,10 +347,11 @@ list-style: none;
  }
  .g-col-4 ul li a {
     text-decoration: none;
-    font-family: $main-font;
+    @include font-style;
+    /*font-family: $main-font;
     color: black;
     font-variant-caps: all-small-caps;
-    font-weight: 500; 
+    font-weight: 500;*/ 
  }
  .g-col-4 ul li button{
     border-radius: $radius;
@@ -331,21 +365,24 @@ list-style: none;
     margin-bottom: 0;
  }
  .camisas {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax (600px, 1fr));
+    @include grid-repeat;
+    /*display: grid;
+    grid-template-columns: repeat(auto-fit, minmax (600px, 1fr));*/
     padding: $padding-box;
     margin: $margin-box;
     background-color: $secondary-background;
  }
  .tienda-camisas {
-    display: flex;
-    justify-content: space-evenly;
+    @include flex (flex, space-evenly);
+    /*display: flex;
+    justify-content: space-evenly;*/
     margin: 0; 
     padding: 0;
     }
  .productos-camisas{
-     display: grid;
-     grid-template-columns: repeat(auto-fit, minmax (600px, 1fr));
+    @include grid-repeat; 
+    /*display: grid;
+     grid-template-columns: repeat(auto-fit, minmax (600px, 1fr));*/
      margin: $second-margin-box;
      padding: $padding-box;
     }
@@ -353,8 +390,9 @@ list-style: none;
      margin: 0;
      padding: 0;
      list-style: none;
-     display: grid;
-     grid-template-columns: repeat(3, 1fr);
+     @include grid-repeat-secondary;
+     /*display: grid;
+     grid-template-columns: repeat(3, 1fr);*/
     }
     .productos-items li{
      padding: 5px;
@@ -377,23 +415,26 @@ list-style: none;
         }
     }
     .eventos {
-     display: grid;
-     grid-template-columns: repeat(auto-fit, minmax (600px, 1fr));
+     @include grid-repeat;
+     /*display: grid;
+     grid-template-columns: repeat(auto-fit, minmax (600px, 1fr));*/
      padding: $padding-box;
      margin: $second-margin-box;
      background-color: $secondary-background;
     }
     .articulo {
-     display: flex;
-     justify-content: space-around;
+     @include flex (flex, space-around);
+     /*display: flex;
+     justify-content: space-around;*/
     }
     .articulo-cajas {
      display: flex;
      flex-direction: column;
     }
     .articulo-cajas-footer {
-     display: flex;
-     justify-content: space-around;
+     @include flex (flex, space-around);
+     /*display: flex;
+     justify-content: space-around;*/
     }
     .jevi-portada{
      padding: $padding-box;
@@ -405,8 +446,9 @@ list-style: none;
      border-radius: $radius; 
     }
     .jevi-retratos {
-     display: flex;
-     justify-content: space-around;
+     @include flex (flex, space-around);
+     /*display: flex;
+     justify-content: space-around;*/
      padding: $padding-box;
     }
     .jevi-retratos img{
@@ -529,7 +571,7 @@ list-style: none;
 }
 @media (max-width:880px){
     .nosotros-texto p{
-        font-size: large;
+        font-size: medium;
         font-weight: 800;
     } 
     .g-col-4 a img {
