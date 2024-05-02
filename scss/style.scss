@@ -24,6 +24,10 @@ $padding-box: 10px;
     display: $display;
     justify-content: $justify;
 }
+@mixin imagen ($width, $object){
+    width: $width;
+    object-fit: $object;
+}
 * { margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -83,8 +87,9 @@ h3 {
     border: $border;
 }
 .banner a img {
-    width: 100%;
-    object-fit: cover;
+   @include imagen (100%, cover);
+    /*width: 100%;
+    object-fit: cover;*/
     border: $border;
     border-radius: $radius; 
 }
@@ -134,8 +139,9 @@ padding: 0;
     img {
         margin: 0;
         padding: 0;
-        width: 100%;
-        object-fit: cover;
+        @include imagen (100%, cover);
+        /*width: 100%;
+        object-fit: cover;*/
         align-items: center;
         transition: 1s;
     }
@@ -163,8 +169,9 @@ padding: 0;
     img {
         margin: 0;
     padding: 0;
-    width: 100%;
-    object-fit: cover;
+    @include imagen (100%, cover);
+   /* width: 100%;
+    object-fit: cover;*/
     transition: 2s;  
     }
 }
@@ -214,8 +221,9 @@ padding: 0;
  }
 
  img {
-    width: 250px;
-    object-fit: cover;
+    @include imagen (250px, cover);
+    /*width: 250px;
+    object-fit: cover;*/
     border: $border;
     border-radius: $radius;
     transition: 1s;
@@ -243,8 +251,9 @@ padding: 0;
     }
 }
 .linkeventos {
-    width: 100%;
-    object-fit: cover;
+    @include imagen (100%, cover);
+    /*width: 100%;
+    object-fit: cover;*/
  }
  #us {
     background-color: $secondary-background;
@@ -259,8 +268,9 @@ padding: 0;
     border-radius: $radius;
  }
  .nosotros img {
-    width: 100%;
-    object-fit: cover;
+    @include imagen (100%, cover);
+    /* width: 100%;
+    object-fit: cover;*/
  }
  .nosotros-texto {
     position: absolute;
@@ -409,8 +419,9 @@ list-style: none;
         img {
         margin: 0;
         padding: 0;
-        width: 100%;
-        object-fit: cover;
+        @include imagen (100%, cover);
+        /*width: 100%;
+        object-fit: cover;*/
         transition: 1s;
         }
     }
@@ -440,8 +451,9 @@ list-style: none;
      padding: $padding-box;
     }
     .jevi-portada img {
-     width: 85%;
-     object-fit: cover;
+     @include imagen (85%, cover);
+     /*width: 85%;
+     object-fit: cover;*/
      border: $border;
      border-radius: $radius; 
     }
@@ -452,8 +464,9 @@ list-style: none;
      padding: $padding-box;
     }
     .jevi-retratos img{
-     width: 40%;
-     object-fit: cover;
+     @include imagen (40%, cover);
+     /*width: 40%;
+     object-fit: cover;*/
      border: $border;
      border-radius: $radius; 
     }
@@ -461,8 +474,9 @@ list-style: none;
      padding: $padding-box;
     }
     .jevi-tienda img {
-     width: 420px;
-     object-fit: cover;
+     @include imagen (420px, cover);
+     /*width: 420px;
+     object-fit: cover;*/
      border: $border;
      border-radius: $radius; 
     }
@@ -595,9 +609,10 @@ list-style: none;
         flex-direction: column;
      }
      .nosotros img {
-        width: 100%;
         height: 100%;
-        object-fit: cover;
+        @include imagen (100%, cover);
+        /*width: 100%;
+        object-fit: cover;*/
         border-bottom: solid black 1px;
         border-bottom-left-radius: 3px;
         border-bottom-right-radius: 3px;
@@ -610,7 +625,7 @@ list-style: none;
      }
      .nosotros-texto p{
         color: black;
-        font-family: "Rubik", sans-serif;
+        font-family: $main-font;
         font-variant-caps: all-small-caps;
         font-size:medium;
         font-weight: 800;

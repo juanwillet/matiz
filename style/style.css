@@ -81,6 +81,8 @@ h3 {
 .banner a img {
   width: 100%;
   object-fit: cover;
+  /*width: 100%;
+  object-fit: cover;*/
   border: solid black 1px;
   border-radius: 3px;
 }
@@ -141,6 +143,8 @@ h3 {
   padding: 0;
   width: 100%;
   object-fit: cover;
+  /*width: 100%;
+  object-fit: cover;*/
   align-items: center;
   transition: 1s;
 }
@@ -172,6 +176,8 @@ h3 {
   padding: 0;
   width: 100%;
   object-fit: cover;
+  /* width: 100%;
+   object-fit: cover;*/
   transition: 2s;
 }
 
@@ -233,6 +239,8 @@ h3 {
 .looks-fotos a img {
   width: 250px;
   object-fit: cover;
+  /*width: 250px;
+  object-fit: cover;*/
   border: solid black 1px;
   border-radius: 3px;
   transition: 1s;
@@ -263,6 +271,8 @@ h3 {
 .linkeventos {
   width: 100%;
   object-fit: cover;
+  /*width: 100%;
+  object-fit: cover;*/
 }
 
 #us {
@@ -282,6 +292,8 @@ h3 {
 .nosotros img {
   width: 100%;
   object-fit: cover;
+  /* width: 100%;
+  object-fit: cover;*/
 }
 
 .nosotros-texto {
@@ -470,6 +482,8 @@ h3 {
   padding: 0;
   width: 100%;
   object-fit: cover;
+  /*width: 100%;
+  object-fit: cover;*/
   transition: 1s;
 }
 
@@ -509,6 +523,8 @@ h3 {
 .jevi-portada img {
   width: 85%;
   object-fit: cover;
+  /*width: 85%;
+  object-fit: cover;*/
   border: solid black 1px;
   border-radius: 3px;
 }
@@ -524,6 +540,8 @@ h3 {
 .jevi-retratos img {
   width: 40%;
   object-fit: cover;
+  /*width: 40%;
+  object-fit: cover;*/
   border: solid black 1px;
   border-radius: 3px;
 }
@@ -535,6 +553,8 @@ h3 {
 .jevi-tienda img {
   width: 420px;
   object-fit: cover;
+  /*width: 420px;
+  object-fit: cover;*/
   border: solid black 1px;
   border-radius: 3px;
 }
@@ -669,9 +689,11 @@ h3 {
     flex-direction: column;
   }
   .nosotros img {
-    width: 100%;
     height: 100%;
+    width: 100%;
     object-fit: cover;
+    /*width: 100%;
+    object-fit: cover;*/
     border-bottom: solid black 1px;
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
