@@ -1,0 +1,49 @@
+.grid {
+    @include grid-repeat-secondary;
+    border: $border;
+    border-radius: 5px;
+    margin: $second-margin-box;
+    background-color: $secondary-background;
+ }
+ .g-col-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: $border;
+    border-radius: 5px; 
+    margin: $margin-box;
+    background-color: $main-background;
+    a {
+        text-decoration: none;
+        @include font-style; 
+        img {
+            width: 20%;
+            margin-left: 8px;
+        }   
+       }
+    h2 {
+        border: none;
+    text-align: center
+     }
+    ul {
+     padding: 0;
+     margin-bottom: 0;
+     li {
+        list-style: none;
+        padding: $padding-box;
+        p {
+            margin-bottom: 0;  
+        } 
+        button {
+            border-radius: $radius;
+            outline: none;
+            padding: $padding-box;
+        
+        a {
+         text-decoration: none;
+         @include font-style;    
+        } 
+        }  
+     }    
+    }
+ }

@@ -1,0 +1,27 @@
+h1 {
+    text-align: center;
+    @include font-style;
+    list-style: none;
+    padding: $padding-box;
+    background-color: $main-background;
+    margin: $margin-box;
+    border: $border;
+}
+h2 {
+    text-align: center;
+    @include font-style;
+    list-style: none;
+    padding: $padding-box;
+    background-color: $main-background;
+    margin: $margin-box;
+    border: $border;
+}
+h3 {
+    text-align: center;
+    @include font-style;
+    list-style: none;
+    padding: $padding-box;
+    background-color: $main-background;
+    margin: $margin-box;
+    border: $border;
+}

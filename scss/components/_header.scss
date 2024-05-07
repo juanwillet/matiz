@@ -1,0 +1,22 @@
+header {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+.collapse {
+    justify-content: flex-end;
+}
+.navbar-brand {
+img {
+    width: 60px;
+} 
+}
+.nav-link {
+    @include font-style;
+}
+.dropdown-item {
+    @include font-style;
+}
+.fa-brands {
+    color: black;
+}

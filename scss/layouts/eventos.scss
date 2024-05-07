@@ -1,0 +1,42 @@
+.eventos {
+    @include grid-repeat;
+    padding: $padding-box;
+    margin: $second-margin-box;
+    background-color: $secondary-background;
+   }
+   .articulo {
+    @include flex (flex, space-around);
+   }
+   .articulo-cajas {
+    display: flex;
+    flex-direction: column;
+   }
+   .articulo-cajas-footer {
+    @include flex (flex, space-around);
+   }
+   .jevi-portada {
+    padding: $padding-box;
+    img {
+       @include imagen (85%, cover);
+       border: $border;
+       border-radius: $radius;    
+    }
+   }
+   .jevi-retratos {
+    @include flex (flex, space-around);
+    padding: $padding-box;
+    img {
+       @include imagen (40%, cover);
+       border: $border;
+       border-radius: $radius;   
+    }
+   }
+   .jevi-tienda{
+    @include flex (flex, space-around);
+    padding: $padding-box;
+    img {
+       @include imagen (420px, cover);
+       border: $border;
+       border-radius: $radius;  
+    }
+   }

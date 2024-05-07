@@ -1,0 +1,22 @@
+@mixin grid-repeat {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax (600px, 1fr));   
+}
+@mixin grid-repeat-secondary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+@mixin font-style {
+    font-family: $main-font;
+    color: black;
+    font-variant-caps: all-small-caps;
+    font-weight: 500;
+}
+@mixin flex ($display, $justify) {
+    display: $display;
+    justify-content: $justify;
+}
+@mixin imagen ($width, $object){
+    width: $width;
+    object-fit: $object;
+}
