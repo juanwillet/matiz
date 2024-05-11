@@ -44,8 +44,16 @@
 .g-col-4 ul li {
   list-style: none;
   padding: 10px;
+  font-family: "Rubik", sans-serif;
+  color: black;
+  font-variant-caps: all-small-caps;
+  font-weight: 500;
 }
 .g-col-4 ul li p {
+  font-family: "Rubik", sans-serif;
+  color: black;
+  font-variant-caps: all-small-caps;
+  font-weight: 500;
   margin-bottom: 0;
 }
 .g-col-4 ul li button {
