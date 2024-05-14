@@ -13,6 +13,9 @@
     border-radius: 5px; 
     margin: $margin-box;
     background-color: $main-background;
+    p {
+        @include font-style;  
+    }
     a {
         text-decoration: none;
         @include font-style; 

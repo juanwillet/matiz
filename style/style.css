@@ -22,6 +22,12 @@
   margin: 20px;
   background-color: white;
 }
+.g-col-4 p {
+  font-family: "Rubik", sans-serif;
+  color: black;
+  font-variant-caps: all-small-caps;
+  font-weight: 500;
+}
 .g-col-4 a {
   text-decoration: none;
   font-family: "Rubik", sans-serif;
