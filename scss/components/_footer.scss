@@ -43,6 +43,8 @@
             border-radius: $radius;
             outline: none;
             padding: $padding-box;
+            color: $secondary-background;
+            width: 80%;
         
         a {
          text-decoration: none;
